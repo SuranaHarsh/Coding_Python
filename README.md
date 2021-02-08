@@ -28,6 +28,11 @@ def div(num1, num2):
 	except ZeroDivisionError:
 		print("Handled div by zero. Returning Zero.")
 		return 0
+		
+
+# Function for Squaring of 2 variables
+def sq(num1):
+	return num1 * num1
 
 
 def runOperation(operation, num1, num2):
@@ -45,6 +50,9 @@ def runOperation(operation, num1, num2):
 	elif (operation == 4):
 		print("Dividing...")
 		print(div(num1, num2))
+	elif (operation == 5):
+		print("Squaring...")
+		print(sq(num1))	
 	else:
 		print("I don't understand. Please try again.")
 
@@ -61,14 +69,14 @@ def main():
 			try:
 				num1 = float(input("What is number 1? "))
 				num2 = float(input("What is number 2? "))
-				operation = int(input("What you want to do? 1.Add, 2.Subtract, 3.Multiply, 4.Divide. Enter a number: "))
+				operation = int(input("What you want to do? 1.Add, 2.Subtract, 3.Multiply, 4.Divide, 5.Square. Enter a number: "))
 				validInput = True
 			except ValueError:
 				print("Invalid Input. Please try again")
 			except:
 				print("Unknown Error")
 			runOperation(operation, num1, num2)
-			if (operation >= 5):
+			if (operation >= 6):
 				continue
 
 			confirmation = True
@@ -86,4 +94,6 @@ def main():
 
 
 main()
-	
+
+
+
