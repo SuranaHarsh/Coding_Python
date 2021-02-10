@@ -11,6 +11,10 @@ while guess != secret_word and not out_of_guesses:
     if guess_count < guess_limit:
         guess = input("Enter Guess Number " + str(guess_count + 1) + " : ")
         guess_count += 1
+        if guess_count == 1:
+            print("Hint No.1 : It is an Animal.")
+        elif guess_count == 2:
+            print("Hint No.2 : It has extremely long neck and legs.")
     else:
         out_of_guesses = True
 
