@@ -30,7 +30,7 @@ def div(num1, num2):
 		return 0
 		
 
-# Function for Squaring of 2 variables
+# Function for Squaring of a variables
 def sq(num1):
 	return num1 * num1
 
@@ -78,19 +78,18 @@ def main():
 			runOperation(operation, num1, num2)
 			if (operation >= 6):
 				continue
-
-confirmation = True
-while confirmation:
-	# Ask user if wants to continue
-	user_yn = int(input("Do you want to continue using calculator? 1. Yes, 2. No. Enter a number: "))
-	if (user_yn == 1):
-		user_continue = True
-		confirmation = False
-	elif (user_yn == 2):
-		user_continue = False
-		confirmation = False
-	else:
-		print("I don't understand. Please try again.")
+			confirmation = True
+			while confirmation:
+				# Ask user if wants to continue
+				user_yn = int(input("Do you want to continue using calculator? 1. Yes, 2. No. Enter a number: "))
+				if (user_yn == 1):
+					user_continue = True
+					confirmation = False
+				elif (user_yn == 2):
+					user_continue = False
+					confirmation = False
+				else:
+					print("I don't understand. Please try again.")
 
 
 main()
