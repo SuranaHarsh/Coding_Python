@@ -1,3 +1,6 @@
+### Learning and modifiying to increase complexity of the game
+
+
 
 secret_word = "giraffe"
 guess = ""
@@ -7,13 +10,13 @@ out_of_guesses = False
 
 print("Welcome to the Guessing Game.")
 print("You have " + str(guess_limit) + " Guesses. Good Luck!")
-while guess != secret_word and not out_of_guesses:
+while guess.lower() != secret_word and not out_of_guesses:
     if guess_count < guess_limit:
         guess = input("Enter Guess Number " + str(guess_count + 1) + " : ")
         guess_count += 1
-        if guess_count == 1:
+        if guess_count == 1 and guess.lower() != secret_word:
             print("Hint No.1 : It is an Animal.")
-        elif guess_count == 2:
+        elif guess_count == 2 and guess.lower() != secret_word:
             print("Hint No.2 : It has extremely long neck and legs.")
     else:
         out_of_guesses = True
@@ -21,5 +24,7 @@ while guess != secret_word and not out_of_guesses:
 if out_of_guesses:
     print("Out of Guesses, YOU LOSE!")
 else:
-    print("You win! You took " + str(guess_count) + " guesses")
+    print("You win! No of Guesses " + str(guess_count) + ".")
+
+
 
