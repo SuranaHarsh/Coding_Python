@@ -81,7 +81,6 @@ def main():
 			run_operation(operation, num1, num2)
 			if operation >= 6:
 				continue
-
 			confirmation = True
 			while confirmation:
 				# Ask user if wants to continue
