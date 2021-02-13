@@ -66,29 +66,30 @@ def main():
 	user_continue = True
 	while user_continue:
 		# Run calculator operation again
-		validInput = False
-		while not validInput:
+		valid_input = False
+		while not valid_input:
 			# Get user Input
 			try:
 				num1 = float(input("What is number 1? "))
 				num2 = float(input("What is number 2? "))
-				operation = int(input("What you want to do? 1.Add, 2.Subtract, 3.Multiply, 4.Divide, 5.Square. Enter a number: "))
-				validInput = True
+				operation = int(input("What you want to do? 1.Add, 2.Subtract, 3.Multiply, 4.Divide, 5.Power. Enter a number: "))
+				valid_input = True
 			except ValueError:
 				print("Invalid Input. Please try again")
 			except:
 				print("Unknown Error")
-			runOperation(operation, num1, num2)
-			if (operation >= 6):
+			run_operation(operation, num1, num2)
+			if operation >= 6:
 				continue
+
 			confirmation = True
 			while confirmation:
 				# Ask user if wants to continue
 				user_yn = int(input("Do you want to continue using calculator? 1. Yes, 2. No. Enter a number: "))
-				if (user_yn == 1):
+				if user_yn == 1:
 					user_continue = True
 					confirmation = False
-				elif (user_yn == 2):
+				elif user_yn == 2:
 					user_continue = False
 					confirmation = False
 				else:
@@ -96,6 +97,6 @@ def main():
 
 
 main()
-
+	
 
 
