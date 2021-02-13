@@ -38,24 +38,24 @@ def raise_to_power(num1, num2):
 	return result
 
 
-def runOperation(operation, num1, num2):
+def run_operation(operation, num1, num2):
 	"""Determines the operation to run based on the operation argument which should be passed in as an integer"""
 	# Determine operation
-	if (operation == 1):
-		print("Adding...")
+	if operation == 1:
+		print("Adding Num1 and Num2...")
 		print(add(num1, num2))
-	elif (operation == 2):
-		print("Subtracting...")
+	elif operation == 2:
+		print("Subtracting Num2 from Num1...")
 		print(sub(num1, num2))
-	elif (operation == 3):
-		print("Multiplying...")
+	elif operation == 3:
+		print("Multiplying Num1 and Num2...")
 		print(mul(num1, num2))
-	elif (operation == 4):
-		print("Dividing...")
+	elif operation == 4:
+		print("Dividing Num1 by Num2...")
 		print(div(num1, num2))
-	elif (operation == 5):
-		print("Squaring...")
-		print(sq(num1))	
+	elif operation == 5:
+		print("Raising Num1 to power of Num2...")
+		print(raise_to_power(num1, num2))
 	else:
 		print("I don't understand. Please try again.")
 
