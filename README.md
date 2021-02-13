@@ -30,9 +30,12 @@ def div(num1, num2):
 		return 0
 		
 
-# Function for Squaring of a variables
-def sq(num1):
-	return num1 * num1
+# Function for Raise to power of 2 variables
+def raise_to_power(num1, num2):
+	result = 1
+	for index in range(int(num2)):
+		result = result * num1
+	return result
 
 
 def runOperation(operation, num1, num2):
