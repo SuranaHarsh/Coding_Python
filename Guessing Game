@@ -1,6 +1,4 @@
-### Learning and modifiying to increase complexity of the game
-
-
+# Learning and modifiying to increase complexity of the game
 
 secret_word = "giraffe"
 guess = ""
@@ -10,6 +8,8 @@ out_of_guesses = False
 
 print("Welcome to the Guessing Game.")
 print("You have " + str(guess_limit) + " Guesses. Good Luck!")
+
+# While guess is not same as secret word keep looping till guess limit reaches.
 while guess.lower() != secret_word and not out_of_guesses:
     if guess_count < guess_limit:
         guess = input("Enter Guess Number " + str(guess_count + 1) + " : ")
@@ -21,6 +21,7 @@ while guess.lower() != secret_word and not out_of_guesses:
     else:
         out_of_guesses = True
 
+# If guessed corectly within guess limit print You win else You lose.
 if out_of_guesses:
     print("Out of Guesses, YOU LOSE!")
 else:
