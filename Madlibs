@@ -1,0 +1,22 @@
+# String concatenation (join strings together)
+# Suppose we want to create a string that says "subscribe to _____(eg my_channel) "
+# my_channel = "some string variable"
+
+# Few ways to do this are given below:
+# print("subscribe to " + my_channel)
+# print("subscribe to {}".format(my_channel))
+# print(f"subscribe to {my_channel}")
+
+# Just an example:
+# Need to get input for all vales that we need user to input
+adj = input("Input an Adjective: ")
+verb1 = input("Input a Verb: ")
+verb2 = input("Input a Verb: ")
+famous_person = input("Input a Famous person: ")
+
+# You can write any story or paragraph as you wish
+madlib = f"Programming is so {adj}! Programming makes me so excited all the time because \
+I like to {verb1}. Stay {verb2} like you are {famous_person}!"
+
+# Just need to print the final story
+print(madlib)
