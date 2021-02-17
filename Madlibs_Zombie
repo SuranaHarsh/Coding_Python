@@ -1,4 +1,4 @@
-# Sample Code from KylieYing
+# Sample Code from KylieYing using fstrings
 
 def madlib():
     time_of_day = input("Time of Day: ")
