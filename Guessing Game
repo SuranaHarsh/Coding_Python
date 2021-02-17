@@ -84,11 +84,11 @@ def guess(x):
     while guess != random_number:
         if guess < random_number:
             print("Sorry!! Guess again. Too Low.")
-            guess = int(input(f"Guess a number between {guess} and {x}: "))
+            guess = int(input(f"Guess a number bigger than {guess}: "))
         elif guess > random_number:
             print("Sorry!! Guess again. Too high.")
-            guess = int(input(f"Guess a number between 1 and {guess}: "))
-    print(f"Congrats you have guessed the number {x} correctly.")
+            guess = int(input(f"Guess a number smaller than {guess}: "))
+    print(f"Congrats you have guessed the random number {guess} correctly.")
 
 
 guess(100)
